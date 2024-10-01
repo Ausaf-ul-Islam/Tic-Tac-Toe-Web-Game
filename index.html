@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Tic Tac Toe Game</title>
+    <link rel="icon" href="logo.png" type="png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Manifest for PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#000" />
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <!-- Game Message Container (Initially Hidden) -->
+    <div class="msg-container hide">
+      <p id="msg">Winner</p>
+      <button id="new-btn" class="btn">New Game</button>
+      <button id="go-back-btn" class="btn">Go Back</button>
+    </div>
+    <!-- Game Start Container (Initially Hidden) -->
+    <div class="start-container hide">
+      <h1 class="game-title">Tic Tac Toe</h1>
+      <button id="play-btn" class="btn">Play with AI</button>
+      <button id="about-btn" class="btn">About</button>
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/ausaf-ul-islam" target="_blank"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+        <a href="https://x.com/ausaf_ul_islam" target="_blank"
+          ><i class="bx bxl-twitter"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/@asf_writes?sub_confirmation=1"
+          target="_blank"
+          ><i class="bx bxl-youtube"></i
+        ></a>
+        <a href="https://www.instagram.com/ausafkhan987/" target="_blank"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- About Popup (Initially Hidden) -->
+    <div class="popup hide">
+      <div class="popup-content">
+        <h2>About</h2>
+        <p>
+          This is a simple Tic Tac Toe game where you can play With AI.The Game
+          Is Developed By <span>AUSAF UL ISLAM</span>
+        </p>
+        <button id="close-popup" class="btn">Close</button>
+      </div>
+    </div>
+
+    <!-- Main Game Container (Initially Hidden) -->
+    <main class="game-container hide">
+      <header class="header"></header>
+      <h1>Tic Tac Toe</h1>
+      <div class="container">
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </div>
+      <button id="reset-btn" class="btn">Reset Game</button>
+    </main>
+
+    <!-- Linking the Script File -->
+    <script src="script.js"></script>
+  </body>
+</html>
